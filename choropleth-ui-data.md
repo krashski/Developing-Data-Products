@@ -18,9 +18,11 @@ The Application
 
 A choropleth map is a thematic map with areas that are shaded in proportion to the levels of the variable displayed on the map. It provides an easy way to visualize the level of variability within a geographic region.
 
-The application uses the `rUnemploymentData` and `choroplethrMaps` packages to create a choropleth map of US unemployment rates. Users can select a national or state map for any year between 1990 and 2013.
+The application uses the `rUnemploymentData` and `choroplethrMaps` packages to create choropleth maps of US unemployment rates by county. Users can select a national or state map for any year between 1990 and 2013.
 
-The application is available at https://krashski.shinyapps.io/choropleth-ui-data
+The application is available on the <a href = 'https://krashski.shinyapps.io/choropleth-ui-data'>Shinyapps.io</a> website 
+
+Source code is available on <a href = 'https://github.com/krashski/Developing-Data-Products/tree/master/choropleth-ui-data'>GitHub</a>
 
 The Data
 ========================================================
@@ -31,7 +33,7 @@ library(rUnemploymentData)
 data(df_county_unemployment)
 
 # show 2012-2013 data columns only
-head(df_county_unemployment[, c(1:3, 26:27)])
+head(df_county_unemployment[, -c(4:25)], 5)
 ```
 
 ```
@@ -41,7 +43,6 @@ head(df_county_unemployment[, c(1:3, 26:27)])
 3   1005     barbour    alabama 11.0 10.0
 4   1007        bibb    alabama  7.5  6.8
 5   1009      blount    alabama  6.1  5.6
-6   1011     bullock    alabama 13.2 12.0
 ```
 (Source: <a href = 'http://www.bls.gov/lau/'>US Bureau of Labor Statistics</a>)
 

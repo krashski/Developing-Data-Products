@@ -11,7 +11,11 @@ shinyUI(fluidPage(
                     on the map. It provides an easy way to visualize the level of 
                     variability within a geographic region."),
 
-            HTML('</br>'),
+            helpText("This application creates choropleth maps of US unemployment 
+                    rates by county. Users can generate a national or state map 
+                    for any year between 1990 and 2013."),
+            
+            HTML('</br>'),            
             
             helpText("Step 1: Select a year to display"),
             selectInput("year", 
@@ -25,8 +29,8 @@ shinyUI(fluidPage(
                         label = h5("State:"),
                         choices = c('All States', states)),
 
-            helpText("Step 3: Select the number of colors to display
-                     on the map"),               
+            helpText("Step 3: Select the number of colors to use
+                     in the legend"),               
             sliderInput("num", 
                         label = h5("Colors:"), 
                         min = 1, max = 9, value = 7),              

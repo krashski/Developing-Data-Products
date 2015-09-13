@@ -1,8 +1,8 @@
 name: choropleth-ui-data
 account: krashski
 server: shinyapps.io
-bundleId: 264470
+bundleId: 264575
 url: https://krashski.shinyapps.io/choropleth-ui-data
-when: 1442172995.94302
+when: 1442184859.37619
 asMultiple: FALSE
 asStatic: FALSE
