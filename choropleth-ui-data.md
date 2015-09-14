@@ -1,12 +1,14 @@
 Developing Data Products - Choropleth Map of US Unemployment Rates
 ========================================================
 author: Russ Boucher    
-date: September 13 2015
+date: September 14 2015
+transition: rotate
 
 Overview
+
 ========================================================
 
-This presentation describes the project for the Developing Data Products course that is part of the Coursera Data Science Specialization
+This presentation describes an application created for the Developing Data Products course project that is part of the Coursera Data Science Specialization
 
 The project has two parts:
 
@@ -48,5 +50,5 @@ head(df_county_unemployment[, -c(4:25)], 5)
 
 Sample Map
 ========================================================
-This map shows 2013 unemployment rates for all US counties
+This map shows Year 2013 unemployment rates for all US counties
 ![](choropleth-ui-data-figure/map1.png)
